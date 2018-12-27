@@ -1,0 +1,456 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{05ABE3D6-84BA-4255-BFE5-31C6F5851D55}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SchoolOrganization</RootNamespace>
+    <AssemblyName>SchoolOrganization</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>C:\Users\Daniel\Desktop\Instalador\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <SupportUrl>https://www.facebook.com/Vivis.Vivi</SupportUrl>
+    <ErrorReportUrl>https://www.facebook.com/Vivis.Vivi</ErrorReportUrl>
+    <TargetCulture>es-MX</TargetCulture>
+    <ProductName>Escuela</ProductName>
+    <PublisherName>Viveros</PublisherName>
+    <SuiteName>Muchas</SuiteName>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <CreateDesktopShortcut>true</CreateDesktopShortcut>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <Win32Resource>
+    </Win32Resource>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Ph03nyx-Super-Mario-Hat-Mario.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>293EB40DE487D3814F709EE8E74950E99A55AD5F</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>Proyexto Final - Vianey_ClaveTemporal.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>false</SignManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>Properties\app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <PropertyGroup>
+    <TargetZone>LocalIntranet</TargetZone>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <DelaySign>false</DelaySign>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>vivi.pfx</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="itextsharp">
+      <HintPath>D:\Descargas\dll\itextsharp.dll</HintPath>
+    </Reference>
+    <Reference Include="itextsharp.pdfa">
+      <HintPath>D:\Descargas\dll\itextsharp.pdfa.dll</HintPath>
+    </Reference>
+    <Reference Include="itextsharp.xtra">
+      <HintPath>D:\Descargas\dll\itextsharp.xtra.dll</HintPath>
+    </Reference>
+    <Reference Include="MySql.Data, Version=6.8.6.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Telerik.WinControls, Version=2015.1.225.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e" />
+    <Reference Include="Telerik.WinControls.GridView, Version=2015.1.225.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL" />
+    <Reference Include="Telerik.WinControls.Themes.Aqua, Version=2015.1.225.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL" />
+    <Reference Include="Telerik.WinControls.Themes.Breeze, Version=2015.1.225.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL" />
+    <Reference Include="Telerik.WinControls.Themes.Desert, Version=2015.1.225.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL" />
+    <Reference Include="Telerik.WinControls.Themes.Office2010Silver, Version=2015.1.225.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL" />
+    <Reference Include="Telerik.WinControls.Themes.Office2013Dark, Version=2015.1.225.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL" />
+    <Reference Include="Telerik.WinControls.Themes.TelerikMetro, Version=2015.1.225.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL" />
+    <Reference Include="Telerik.WinControls.Themes.TelerikMetroBlue, Version=2015.1.225.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL" />
+    <Reference Include="Telerik.WinControls.Themes.TelerikMetroTouch, Version=2015.1.225.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL" />
+    <Reference Include="Telerik.WinControls.Themes.VisualStudio2012Dark, Version=2015.1.225.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL" />
+    <Reference Include="Telerik.WinControls.Themes.VisualStudio2012Light, Version=2015.1.225.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL" />
+    <Reference Include="Telerik.WinControls.UI, Version=2015.1.225.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL" />
+    <Reference Include="TelerikCommon, Version=2015.1.225.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Administracion\Agregar alumno.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Administracion\Agregar alumno.Designer.cs">
+      <DependentUpon>Agregar alumno.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Administracion\Agregar grupo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Administracion\Agregar grupo.Designer.cs">
+      <DependentUpon>Agregar grupo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Administracion\Agregar Profesor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Administracion\Agregar Profesor.Designer.cs">
+      <DependentUpon>Agregar Profesor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Administracion\Ver alumno.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Administracion\Ver alumno.Designer.cs">
+      <DependentUpon>Ver alumno.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Administracion\Ver Profesor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Administracion\Ver Profesor.Designer.cs">
+      <DependentUpon>Ver Profesor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Administracion\Psicologa\Cuestionario egresados.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Administracion\Psicologa\Cuestionario egresados.designer.cs">
+      <DependentUpon>Cuestionario egresados.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Administracion\Psicologa\Ficha_Tecnica_Psicologa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Administracion\Psicologa\Ficha_Tecnica_Psicologa.designer.cs">
+      <DependentUpon>Ficha_Tecnica_Psicologa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Agregar_Imagen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Agregar_Imagen.Designer.cs">
+      <DependentUpon>Agregar_Imagen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Administracion\Psicologa\Ficha_Clinica.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Administracion\Psicologa\Ficha_Clinica.Designer.cs">
+      <DependentUpon>Ficha_Clinica.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Administracion\Psicologa\Cuest_Prox_Egresar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Administracion\Psicologa\Cuest_Prox_Egresar.designer.cs">
+      <DependentUpon>Cuest_Prox_Egresar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Alumnos\Cambiar contraseña.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Alumnos\Cambiar contraseña.Designer.cs">
+      <DependentUpon>Cambiar contraseña.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Alumnos\Menu alumnos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Alumnos\Menu alumnos.Designer.cs">
+      <DependentUpon>Menu alumnos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Administracion\Psicologa\Menu_psicologa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Administracion\Psicologa\Menu_psicologa.designer.cs">
+      <DependentUpon>Menu_psicologa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Administracion\Psicologa\Men_Encuestas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Administracion\Psicologa\Men_Encuestas.Designer.cs">
+      <DependentUpon>Men_Encuestas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Administracion\Menu director.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Administracion\Menu director.Designer.cs">
+      <DependentUpon>Menu director.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Administracion\Grupo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Administracion\Grupo.Designer.cs">
+      <DependentUpon>Grupo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Alumnos\Ver calificaciones.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Alumnos\Ver calificaciones.Designer.cs">
+      <DependentUpon>Ver calificaciones.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Instalación.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Instalación.Designer.cs">
+      <DependentUpon>Instalación.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MyConection.cs" />
+    <Compile Include="Profesores\Calificacion alumno.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Profesores\Calificacion alumno.Designer.cs">
+      <DependentUpon>Calificacion alumno.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Profesores\Cambiar contraseña Prof.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Profesores\Cambiar contraseña Prof.Designer.cs">
+      <DependentUpon>Cambiar contraseña Prof.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Profesores\Grupo profesor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Profesores\Grupo profesor.Designer.cs">
+      <DependentUpon>Grupo profesor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Profesores\Menu profesor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Profesores\Menu profesor.Designer.cs">
+      <DependentUpon>Menu profesor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Profesores\Parciales.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Profesores\Parciales.Designer.cs">
+      <DependentUpon>Parciales.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Iniciar sesion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Iniciar sesion.Designer.cs">
+      <DependentUpon>Iniciar sesion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Variables.cs" />
+    <EmbeddedResource Include="Administracion\Agregar alumno.resx">
+      <DependentUpon>Agregar alumno.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Administracion\Agregar grupo.resx">
+      <DependentUpon>Agregar grupo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Administracion\Agregar Profesor.resx">
+      <DependentUpon>Agregar Profesor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Administracion\Ver alumno.resx">
+      <DependentUpon>Ver alumno.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Administracion\Ver Profesor.resx">
+      <DependentUpon>Ver Profesor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Administracion\Psicologa\Cuestionario egresados.resx">
+      <DependentUpon>Cuestionario egresados.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Administracion\Psicologa\Ficha_Tecnica_Psicologa.resx">
+      <DependentUpon>Ficha_Tecnica_Psicologa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Agregar_Imagen.resx">
+      <DependentUpon>Agregar_Imagen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Administracion\Psicologa\Ficha_Clinica.resx">
+      <DependentUpon>Ficha_Clinica.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Administracion\Psicologa\Cuest_Prox_Egresar.resx">
+      <DependentUpon>Cuest_Prox_Egresar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Alumnos\Cambiar contraseña.resx">
+      <DependentUpon>Cambiar contraseña.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Alumnos\Menu alumnos.resx">
+      <DependentUpon>Menu alumnos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Administracion\Psicologa\Menu_psicologa.resx">
+      <DependentUpon>Menu_psicologa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Administracion\Psicologa\Men_Encuestas.resx">
+      <DependentUpon>Men_Encuestas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Administracion\Menu director.resx">
+      <DependentUpon>Menu director.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Administracion\Grupo.resx">
+      <DependentUpon>Grupo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Alumnos\Ver calificaciones.resx">
+      <DependentUpon>Ver calificaciones.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Instalación.resx">
+      <DependentUpon>Instalación.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Profesores\Calificacion alumno.resx">
+      <DependentUpon>Calificacion alumno.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Profesores\Cambiar contraseña Prof.resx">
+      <DependentUpon>Cambiar contraseña Prof.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Profesores\Grupo profesor.resx">
+      <DependentUpon>Grupo profesor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Profesores\Menu profesor.resx">
+      <DependentUpon>Menu profesor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Profesores\Parciales.resx">
+      <DependentUpon>Parciales.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Iniciar sesion.resx">
+      <DependentUpon>Iniciar sesion.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\app.manifest" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="SchoolOrganization.pfx" />
+    <None Include="vivi.pfx" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sdf.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Iniciar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Salir.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Cerrar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Boton.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Boton Verde.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Ph03nyx-Super-Mario-Hat-Mario.ico" />
+    <Content Include="Resources\fondo-azul-200533.jpg" />
+    <Content Include="Resources\Fondo Azul.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="Microsoft.Office.Core">
+      <Guid>{2DF8D04C-5BFA-101B-BDE5-00AA0044DE52}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>7</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="Microsoft.Office.Interop.Word">
+      <Guid>{00020905-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>8</VersionMajor>
+      <VersionMinor>6</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="VBIDE">
+      <Guid>{0002E157-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>5</VersionMajor>
+      <VersionMinor>3</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.5">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.5 %28x86 y x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
